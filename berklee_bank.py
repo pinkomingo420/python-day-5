@@ -80,3 +80,26 @@ def exit_atm():
     Return: None.
     """
     pass
+
+
+def run_tests():
+    # Test welcome()
+    print(welcome())  # Expecting None
+
+    # Test login()
+    print(login(Amira,0000))  # Expecting a valid account name or None
+
+    # Test check_balance()
+    print(check_balance("Priya"))  # Expecting None
+
+    # Test deposit()
+    print(deposit("Priya",100))  # Expecting None
+
+    # Test withdraw()
+    print(withdraw("Carlos",100))  # Expecting None
+
+    # Test main_menu()
+    print(main_menu(deposit))  # Expecting a menu option
+
+    # Test exit_atm()
+    print(exit_atm())  # Expecting None
